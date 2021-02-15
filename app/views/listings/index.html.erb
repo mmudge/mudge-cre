@@ -1,0 +1,9 @@
+<h1>Listings admin page</h1>
+
+
+<% @listings.each do |listing| %>
+  <span>
+    <p><%= listing.address %></p>
+    <p><%= listing.for_lease %></p>
+  </span>
+<% end %>
