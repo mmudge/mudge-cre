@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   end
 
   get 'listings', to: 'listings#index', as: 'listings'
+  get 'about', to: 'pages#about', as: 'about'
 
   root to: "pages#landing"
 end

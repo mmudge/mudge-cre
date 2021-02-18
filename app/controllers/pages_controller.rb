@@ -5,4 +5,7 @@ class PagesController < ApplicationController
   def listings
     @listings = Listing.all
   end
+
+  def about
+  end
 end
