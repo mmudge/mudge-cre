@@ -58,6 +58,6 @@ class Admin::ListingsController < ApplicationController
   end
 
   def listing_params
-    params.require(:listing).permit(:address)
+    params.require(:listing).permit(:address, :main_photo)
   end
 end
