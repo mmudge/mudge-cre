@@ -1,18 +1,22 @@
-<nav class="bg-gray-800 text-white">
-  <div class="px-9 py-6 flex justify-between">
-    <div class="flex justify-start text-white">
-      <div class="mr-16">
-        <h1 class="text-xl font-bold">Mudge Team</h1>
-        <h2 class="text-xs font-light text-gray">Commercial Real Estate</h2>
-      </div>
-      <%= link_to 'Listings', listings_path, style: 'color: white;', class: 'btn btn-blue' %>
-      <%= link_to 'About', about_path, style: 'color: white;', class: 'btn btn-blue' %>
-      <%= link_to 'More', listings_path, style: 'color: white;', class: 'btn btn-blue' %>
-    </div>
+<nav class="bg-gray-800">
+  <div class="px-72 py-6">
+    <div class="flex justify-between items-center text-white">
 
-    <div class="flex justify-start">
-      <%= link_to 'Login', new_user_session_path, style: 'color: white;', class: 'btn btn-blue' %>
-      <%= link_to 'Find Available Space', listings_path, style: 'color: white;', class: 'btn btn-red' %>
+      <div class="mr-16">
+        <div class="flex text-2xl">
+          <h1 class="font-bold">Mudge Team</h1>
+        </div>
+        <h2 class="text-xs font-medium text-gray-400">COMMERCIAL REAL ESTATE</h2>
+      </div>
+
+      <div class="flex items-center">
+        <%= link_to 'Listings', listings_path, style: 'color: white;', class: 'text-lg text-bold flex items-center' %>
+        <%= link_to 'About', about_path, style: 'color: white;', class: 'ml-10 text-lg text-bold flex items-center' %>
+        <%= link_to 'More', listings_path, style: 'color: white;', class: 'ml-10 text-lg text-bold flex items-center' %>
+        <%= link_to 'LOGIN', new_user_session_path, style: 'color: white;', class: 'ml-20 text-md text-extrabold flex items-center rounded-md border-2 border-white px-8 shadow-sm h-8' %>
+        <%= link_to 'REGISTER', new_user_session_path, style: 'color: white;', class: 'ml-5 text-md text-extrabold flex items-center rounded-md border-2 border-white px-8 h-8' %>
+        <%#= link_to 'Find Available Space', listings_path, style: 'color: white;', class: 'btn btn-red' %>
+      </div>
     </div>
   </div>
 </nav>
