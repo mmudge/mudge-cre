@@ -1,10 +1,20 @@
 
-<div class="bg-black text-white font-sans p-9">
-  <h1>Landing page!</h1>
-  <ul>
-    <li><%= link_to 'View Listings', listings_path %></li>
-    <li><%= link_to 'Login', new_user_session_path  %></li>
-    <li><%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
-    <li></li>
-  </ul>
+<div class="bg-gray-50 text-gray-700">
+  <div class="px-72 py-32">
+    <div class="text-5xl font-light">
+      <h1>Southern California's Most Trusted</h1>
+      <div class="flex pt-4 items-baseline">
+        <h1 class="pr-2 text-pink-800 font-semibold text-6xl">Commercial Real Estate</h1>
+        <h1>Team</h1>
+      </div>
+    </div>
+
+    <h2 class="pt-12 max-w-xl text-xl text-gray-500 font-light">We connect buyers to sellers, landlords to tenants, and investors to oppertunities in southern California and beyond. <%= link_to 'Learn more', about_path, class: 'text-pink-700' %></h2>
+
+    <div class="flex max-w-xl pt-16">
+      <input class="font-light border-gray-600 border-r-0 border rounded-md rounded-r-none text-lg py-2 px-3 text-grey-800 flex-grow" type="text" placeholder="Search properties by address, city, or zipcode">
+      <button class="rounded-md rounded-l-none bg-pink-800 text-white font-bold px-4">SEARCH PROPERTIES</button>
+    </div>
+  </div>
+
 </div>
