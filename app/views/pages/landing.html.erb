@@ -1,5 +1,5 @@
 <div class="text-gray-700">
-  <div class="bg-gray-50 2xl:px-72 lg:px-56 md:px-32 lg:py-32 md:py-28">
+  <div style="position: relative; overflow-y: hidden;" class="bg-gray-50 2xl:px-72 lg:px-56 md:px-32 lg:py-32 md:py-28">
     <div>
       <div class="text-5xl font-light">
         <h1>Southern California's Most Trusted</h1>
@@ -15,9 +15,13 @@
         <input class="font-light border-gray-600 border-r-0 border rounded-md rounded-r-none text-lg py-2 px-3 text-grey-800 flex-grow" type="text" placeholder="Search properties by address, city, or zipcode">
         <button class="rounded-md rounded-l-none bg-pink-800 text-white font-bold px-4">SEARCH PROPERTIES</button>
       </div>
+      <div style="position: absolute; right: 0; bottom: -20px; overflow: hidden;">
+        <%= image_tag('building.png', size: '750x750') %>
+      </div>
     </div>
   </div>
-  <div class="2xl:px-72 lg:px-56 md:px-32 lg:py-32 py-20">
+
+  <div style="z-index: 1;" class="bg-white 2xl:px-72 lg:px-56 md:px-32 lg:py-32 py-20">
     <div class="text-center max-w-xl mx-auto">
       <h3 class="text-4xl">Achievements</h3>
 
@@ -41,5 +45,23 @@
         <h6 class="text-lg whitespace-nowrap">Happy Customers</h6>
       </div>
     </div>
+  </div>
+
+  <div class="2xl:px-72 lg:px-56 md:px-32 lg:py-32 py-20 bg-gray-50">
+    <div class="flex justify-center">
+      <div class="w-1/2 h-96 grid grid-cols-2 gap-4">
+        <div class="col-span-1 row-span-2 bg-pink-800 rounded-sm"></div>
+        <div class="bg-pink-800 rounded-sm"></div>
+        <div class="bg-pink-800 rounded-sm"></div>
+
+      </div>
+
+      <div class="w-1/2 px-10">
+        <h4 class="text-md font-bold text-gray-400">BUYING AND LEASING PROPERTY</h4>
+        <h2 class="text-5xl py-2">How it works</h2>
+        <h2 class="text-md font-light text-gray-500">Our step by step process to help clients buy or lease properties</h2>
+      </div>
+    </div>
+
   </div>
 </div>
